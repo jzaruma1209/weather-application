@@ -1,0 +1,36 @@
+.app {
+    background: url('/images/fondo1.png') center / cover;
+    min-height: 100vh;
+    padding: 1rem;
+
+    .error__container{
+      text-align: center;
+      font-size: large;
+      border-radius: 0.5em;
+      padding: 2em;
+      background-image: url('/background-error.jpg');
+      color:navy;
+      box-shadow: 1px 1px 40px 1px rgb(255, 233, 65)
+
+    }
+  }
+.loader__container{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+  .loader {	
+      width: 10%;
+      height: 10%;
+      aspect-ratio: 1;
+      animation: l1 1s infinite;
+    }
+  
+   @keyframes l1 {
+    0%   {transform: perspective(1000px) rotateY(  0deg)}
+    100% {transform: perspective(1000px) rotateY(360deg)}
+  }
+
